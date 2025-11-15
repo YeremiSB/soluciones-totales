@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Soluciones Totales</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
+      color: #1a1a1a;
+    }
+    header {
+      background: #0a1a3a;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+    nav a {
+      color: #ffffff;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    .hero {
+      padding: 100px 40px;
+      text-align: center;
+      background: linear-gradient(135deg, #0a1a3a, #1f3c7a);
+      color: white;
+    }
+    .hero h2 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .contacto-section {
+      padding: 70px 40px;
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+    }
+    .contact-card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    .contact-card h3 {
+      margin-bottom: 10px;
+      color: #0a1a3a;
+    }
+    .contact-card p {
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .form {
+      background: white;
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    .form label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .form input,
+    .form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .form button {
+      background: #ffcc00;
+      padding: 14px 26px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .form button:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #0a1a3a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    h1 a {
+      text-decoration: none;
+      color: inherit;
+    } 
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><a href="index.html">Soluciones Totales</a></h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Estamos aquí para ayudarte</h2>
+    <p>Cuéntanos tu caso y lo resolvemos sin estrés, sin vueltas y sin tecnicismos raros.</p>
+  </section>
+
+  <section class="contacto-section">
+
+    <div class="contact-card">
+      <h3>Nuestros Servicios</h3>
+      <p>✔ Anulación de papeletas</p>
+      <p>✔ Descuentos y apelaciones</p>
+      <p>✔ Asesoría legal rápida</p>
+      <p>✔ Regularización de documentos</p>
+          <div style="margin-top:25px; display:flex; flex-direction:column; gap:12px;">
+        <a href="https://wa.me/51999999999" target="_blank" style="background:#25D366; padding:12px 16px; border-radius:8px; color:white; font-weight:700; text-decoration:none; display:flex; align-items:center; gap:10px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:20px; height:20px;"> WhatsApp
+        </a>
+        <a href="https://m.me/usuario.messenger" target="_blank" style="background:#0084FF; padding:12px 16px; border-radius:8px; color:white; font-weight:700; text-decoration:none; display:flex; align-items:center; gap:10px;">
+          <img src="https://cdn.simpleicons.org/messenger/FFFFFF" alt="Messenger" style="width:20px; height:20px;"> Messenger
+        </a>
+      </div>
+    </div>
+
+    <form class="form">
+      <h3>Envíanos un mensaje</h3>
+
+      <label>Nombre</label>
+      <input type="text" placeholder="Tu nombre" required>
+
+      <label>Correo</label>
+      <input type="email" placeholder="correo@ejemplo.com" required>
+
+      <label>Teléfono</label>
+      <input type="text" placeholder="Tu número" required>
+
+      <label>Mensaje</label>
+      <textarea rows="5" placeholder="Cuéntanos tu caso..."></textarea>
+
+      <button type="submit">Enviar</button>
+          
+
+    </form>
+
+  </section>
+
+  <footer>
+    © 2025 Soluciones Totales — Asesoría Legal y Gestión de Papeletas
+  </footer>
+
+</body>
+</html>

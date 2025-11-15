@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios - Soluciones Totales</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
+      color: #1a1a1a;
+    }
+
+    header {
+      background: #0a1a3a;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    .hero {
+      padding: 80px 40px;
+      background: linear-gradient(135deg, #0a1a3a, #1f3c7a);
+      color: white;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .services {
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .services h3 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #0a1a3a;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .service-item {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s;
+    }
+
+    .service-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-item h4 {
+      margin-bottom: 10px;
+      color: #0a1a3a;
+    }
+
+    footer {
+      background: #0a1a3a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    h1 a {
+      text-decoration: none;
+      color: inherit;
+    } 
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Soluciones Totales</a></h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Servicios Profesionales y Rápidos</h2>
+    <p>Todo lo que necesitas para resolver tus papeletas y trámites sin dolor de cabeza.</p>
+  </section>
+
+  <section class="services">
+    <h3>Nuestros Servicios</h3>
+    <div class="service-grid">
+      <div class="service-item">
+        <h4>Anulación de Papeletas</h4>
+        <p>Revisión legal y defensa completa para eliminar multas injustas.</p>
+      </div>
+
+      <div class="service-item">
+        <h4>Descuentos y Apelaciones</h4>
+        <p>Gestionamos apelaciones y obtenemos rebajas según normativa vigente.</p>
+      </div>
+
+      <div class="service-item">
+        <h4>Asesoría Legal Express</h4>
+        <p>Te explicamos tu caso de forma simple y directa, sin tecnicismos.</p>
+      </div>
+
+      <div class="service-item">
+        <h4>Regularización de Documentos</h4>
+        <p>Solucionamos licencias vencidas, SOAT, papeletas acumuladas y más.</p>
+      </div>
+
+      <div class="service-item">
+        <h4>Representación en Procedimientos</h4>
+        <p>Te acompañamos legalmente ante la municipalidad o SAT cuando es necesario.</p>
+      </div>
+
+      <div class="service-item">
+        <h4>Consultas Personalizadas</h4>
+        <p>Atención por WhatsApp, llamada o presencial según tu preferencia.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Soluciones Totales — Asesoría Legal y Gestión de Papeletas
+  </footer>
+</body>
+</html>
